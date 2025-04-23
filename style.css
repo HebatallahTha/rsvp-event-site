@@ -1,0 +1,345 @@
+/*** Define Theme Variables ***/
+:root {
+    --bg-color: #F3CFC6; /* Light pink background */
+    --text-color: #265C5C; /* Dark teal text */
+    --primary-color: #7D5A5A; /* Dark muted red */
+    --accent-color: #D4A373; /* Warm brown */
+}
+
+/*** Global Styles ***/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*** Global Styles ***/
+html {
+    background-color: var(--bg-color);
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    color: var(--text-color);
+}
+
+body {
+    padding: 50px;
+}
+
+/*** Headings ***/
+h1 {
+    font-family: 'Shrikhand', serif;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-color); /* Adds a gold underline */
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    font-size: 1.7rem;
+}
+
+h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*** Paragraphs ***/
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: var(--text-color);
+}
+
+/*** Links ***/
+a[href="https://github.com/HebatallahTha"] {
+    color: white !important;
+    font-size: 20px; /* Adjust size as needed */
+
+  }
+  a[href="https://www.linkedin.com/in/hebatallah-t-985749339/"] {
+    color: white !important;
+    font-size: 20px; /* Adjust size as needed */
+
+  }
+a:link {
+    color: var(--primary-color); /* Unvisited links */
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-color); /* Visited links */
+}
+
+a:hover {
+    background-color: var(--primary-color);
+    text-decoration: wavy underline;
+}
+
+a:active {
+    color: var(--primary-color); /* Active links */
+}
+
+/*** Buttons ***/
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+
+
+}
+
+/*** Images ***/
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+/*** Header Section Styles ***/
+.header-container {
+    display: flex;
+    flex-direction: row; /* Change from column to row */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Left side of the header (image) */
+.header-item:nth-of-type(1){
+    flex: 1;
+}
+
+#header-img {
+    max-width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Right side of the header (title, subtitle, and buttons) */
+.header-item:nth-of-type(2) {
+    flex: 2;
+    text-align: center;
+    
+}
+
+#header-right h1 {
+    font-family: 'Shrikhand', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#header-right h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Buttons in the header */
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-buttons button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+    background-color: var(--primary-color);
+    
+    
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color); /* Ensure visibility */
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    color: white; /* Make sure the text is visible */
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+
+}
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color); /* Add background so text is visible */
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    text-decoration: wavy underline;
+}
+html {
+    scroll-padding-top: 80px; /* Adjust based on navbar height */
+}
+/* Default dark mode style */
+.dark-mode 
+{
+    background-color: #D4A79F;
+    color: white;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 
+{
+    color: #F5F5F5;
+}
+.dark-mode h2{    border-bottom: 2px solid #C99840; /* Adds a gold underline */}
+.dark-mode p
+{
+    color: #265C5C ;
+    font-weight: bold;
+}
+.dark-mode a
+{
+    color: white ;
+}
+.dark-mode ul
+{
+    color : #265C5C;
+    font-weight:bold;}
+
+.dark-mode h4
+{
+    color:  #FFE1DC ;
+    font-weight: bold;
+}
+.dark-mode button
+{
+    background-color: #C99840;
+}
+
+
+.rsvp-container 
+{
+     display: flex;
+     flex-direction:  row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom : 50px;
+}
+
+.rsvp-para
+{
+    width: 55%;
+    padding-bottom: 10px;
+}
+
+
+.rsvp-participants 
+{
+    width: 45%;
+    padding-right: 10px;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background-color: #ffe6e6;
+
+  
+    /* Set border-color and background */
+  }
+  
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-container {
+    padding: 50px;
+    width: 55%;
+    background-color: rgb(255, 213, 220);
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  
