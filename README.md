@@ -24,7 +24,7 @@ Additionally, the site includes a **dark mode toggle**, so users can switch betw
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/rsvp-event-site.git
+    git clone https://github.com/HebatallahTha/rsvp-event-site.git
     ```
 
 2. Navigate into the project directory:
