@@ -4,7 +4,7 @@
 
 This **RSVP Event Site** is a web application built as the final project for CodePath’s Web101 course. It allows users to RSVP for an event by filling out a form with their name, email, LinkedIn, and location. Upon successful submission, the user's details are added to a dynamic participant list, and a friendly confirmation modal with an animated image pops up.
 
-Additionally, the site includes a **dark mode toggle**, so users can switch between light and dark themes with a single click.
+Additionally, the site includes a **dark mode toggle**, so users can switch between light and dark themes with a single click.You can try it out here aswell: https://teal-cheerful-television-100.vscodeedu.app
 
 ## Features
 
